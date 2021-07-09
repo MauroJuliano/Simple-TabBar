@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		9D09F1C82698BE1A00A8A473 /* Simple_TabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D09F1C62698BE1A00A8A473 /* Simple_TabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D09F1D22698BE5900A8A473 /* CBTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D09F1D12698BE5900A8A473 /* CBTabBarButton.swift */; };
+		9D09F1D42698BE5E00A8A473 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D09F1D32698BE5E00A8A473 /* CustomTabBar.swift */; };
+		9D09F1D62698BE6200A8A473 /* BorderTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D09F1D52698BE6200A8A473 /* BorderTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9D09F1C32698BE1A00A8A473 /* Simple_TabBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Simple_TabBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D09F1C62698BE1A00A8A473 /* Simple_TabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Simple_TabBar.h; sourceTree = "<group>"; };
 		9D09F1C72698BE1A00A8A473 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D09F1D12698BE5900A8A473 /* CBTabBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBTabBarButton.swift; sourceTree = "<group>"; };
+		9D09F1D32698BE5E00A8A473 /* CustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		9D09F1D52698BE6200A8A473 /* BorderTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +52,21 @@
 		9D09F1C52698BE1A00A8A473 /* Simple-TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				9D09F1D02698BE4F00A8A473 /* Classes */,
 				9D09F1C62698BE1A00A8A473 /* Simple_TabBar.h */,
 				9D09F1C72698BE1A00A8A473 /* Info.plist */,
 			);
 			path = "Simple-TabBar";
+			sourceTree = "<group>";
+		};
+		9D09F1D02698BE4F00A8A473 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9D09F1D12698BE5900A8A473 /* CBTabBarButton.swift */,
+				9D09F1D32698BE5E00A8A473 /* CustomTabBar.swift */,
+				9D09F1D52698BE6200A8A473 /* BorderTabBarController.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D09F1D42698BE5E00A8A473 /* CustomTabBar.swift in Sources */,
+				9D09F1D22698BE5900A8A473 /* CBTabBarButton.swift in Sources */,
+				9D09F1D62698BE6200A8A473 /* BorderTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
