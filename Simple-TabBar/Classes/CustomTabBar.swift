@@ -58,7 +58,7 @@ open class CustomTabBar: UITabBar {
     var container: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .clear
+        view.backgroundColor = .red
         view.layer.cornerRadius = 30
         view.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
         return view
@@ -72,6 +72,7 @@ open class CustomTabBar: UITabBar {
         barTintColor = UIColor.white
         tintColor = #colorLiteral(red: 0.1176470588, green: 0.1176470588, blue: 0.431372549, alpha: 1)
         addSubview(container)
+        
         container.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10).isActive = true
         container.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10).isActive = true
         container.topAnchor.constraint(equalTo: topAnchor, constant: 1).isActive = true
