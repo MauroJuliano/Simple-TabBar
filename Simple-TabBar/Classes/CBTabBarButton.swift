@@ -121,7 +121,7 @@ public class CBTabBarButton: UIControl {
         dotView.layer.rasterizationScale = UIScreen.main.scale
         dotView.isHidden = true
         
-       // self.addSubview(tabBg)
+        self.addSubview(tabBg)
         self.addSubview(tabLabel)
         self.addSubview(tabImage)
         self.addSubview(dotView)
