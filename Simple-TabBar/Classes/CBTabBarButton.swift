@@ -200,5 +200,8 @@ public class CBTabBarButton: UIControl {
     override public func layoutSubviews() {
         super.layoutSubviews()
         tabBg.layer.cornerRadius = tabBg.bounds.height / 2.0
+        let dotX: CGFloat = tabImage.center.x - dotView.frame.width/2.0
+        let dotY: CGFloat = tabImage.frame.maxY + 13.0
+        dotView.frame = CGRect(origin: CGPoint(x: dotX, y: dotY), size: dotView.frame.size)
     }
 }
