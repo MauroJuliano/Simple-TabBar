@@ -36,9 +36,13 @@ open class BorderTabBarController: UITabBarController {
             tabBar.select(itemAt: selectedIndex, animated: false)
         }
     }
+
     open override func viewDidLoad(){
         super.viewDidLoad()
         let tabBar = CustomTabBar()
+        tabBar.layer.masksToBounds = true
+        tabBar.layer.cornerRadius = 35
+        tabBar.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
         self.setValue(tabBar, forKey: "tabBar")
     }
     
@@ -66,8 +70,6 @@ open class BorderTabBarController: UITabBarController {
         tabFrame.size.height = barHeight
         tabFrame.origin.y = self.view.frame.size.height - barHeight
         self.tabBar.frame = tabFrame
-        tabBar.layer.cornerRadius = 30
-        tabBar.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
         tabBar.setNeedsLayout()
     }
     
