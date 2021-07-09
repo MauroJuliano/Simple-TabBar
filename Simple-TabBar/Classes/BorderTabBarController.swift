@@ -41,8 +41,8 @@ open class BorderTabBarController: UITabBarController {
         super.viewDidLoad()
         let tabBar = CustomTabBar()
         tabBar.layer.masksToBounds = true
-        tabBar.layer.cornerRadius = 35
-        tabBar.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
+        tabBar.layer.cornerRadius = 25
+        tabBar.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         self.setValue(tabBar, forKey: "tabBar")
     }
     
