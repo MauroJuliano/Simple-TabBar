@@ -43,6 +43,7 @@ open class BorderTabBarController: UITabBarController {
         tabBar.layer.masksToBounds = true
         tabBar.layer.cornerRadius = 50
         tabBar.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        tabBar.backgroundColor = .red
         self.setValue(tabBar, forKey: "tabBar")
     }
     
