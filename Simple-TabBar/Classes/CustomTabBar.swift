@@ -38,7 +38,7 @@ open class CustomTabBar: UITabBar {
     override open func sizeThatFits(_ size: CGSize) -> CGSize {
         super.sizeThatFits(size)
         var sizeThatFits = super.sizeThatFits(size)
-        sizeThatFits.height = 80
+        sizeThatFits.height = 100
         return sizeThatFits
     }
     override open var backgroundColor: UIColor? {
