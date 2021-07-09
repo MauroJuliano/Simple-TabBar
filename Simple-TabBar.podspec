@@ -17,10 +17,10 @@ s.license = { :type => "MIT", :file => "LICENSE" }
 s.author = { "Mauro Figueiredo" => "maurodeveloper@outlook.com" }
 
 # 5 - Replace this URL with your own GitHub page's URL (from the address bar)
-s.homepage = "https://github.com/MauroJuliano/Custom-TabBar"
+s.homepage = "https://github.com/MauroJuliano/Simple-TabBar"
 
 # 6 - Replace this URL with your own Git URL from "Quick Setup"
-s.source = { :git => "https://github.com/MauroJuliano/Custom-TabBar.git",
+s.source = { :git => "https://github.com/MauroJuliano/Simple-TabBar.git",
 :tag => "#{s.version}" }
 
 # 7 COLOQUE AQUI TODAS AS BIBLIOTECAS NATIVAS QUE FOR USAR
