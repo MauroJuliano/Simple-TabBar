@@ -25,5 +25,6 @@ If you need cutom color for each tab set CBTabBarItem class to tab bar items and
 
 <h3> Obs: </h3>
 This pod was created for study purpose only
+
 License
 SimpleTabbar is available under the MIT license. See the LICENSE file for more info.
