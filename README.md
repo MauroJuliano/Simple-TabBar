@@ -1,5 +1,4 @@
 # Simple-TabBar
-<h1> Simple TabBar </h1>
 
 ![Alt Text](https://media.giphy.com/media/yv72Sl1sudCmrA0hpy/giphy.gif)
 
