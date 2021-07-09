@@ -157,9 +157,11 @@ public class CBTabBarButton: UIControl {
         unfoldedConstraints.forEach{$0.isActive = false}
         foldedConstraints.forEach{ $0.isActive = true}
         UIView.animate(withDuration: duration){
+            self.tabBg.backgroundColor = .clear
             self.tabBg.alpha = 0.0
         }
         UIView.animate(withDuration: duration * 0.4) {
+            self.dotView.isHidden = true
             self.tabLabel.alpha = 0.0
         }
         UIView.transition(with: tabImage, duration: duration, options: [.transitionCrossDissolve], animations: {
@@ -171,6 +173,7 @@ public class CBTabBarButton: UIControl {
         foldedConstraints.forEach{ $0.isActive = false}
         
         UIView.animate(withDuration: duration){
+            self.tabBg.backgroundColor = .clear
             self.tabBg.alpha = 1.0
         }
         UIView.animate(withDuration: duration * 0.5, delay: duration * 0.5, options: [], animations: {
