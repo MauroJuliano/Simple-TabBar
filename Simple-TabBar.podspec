@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
 # 1
 s.platform = :ios
-s.ios.deployment_target = '10.0'
+s.ios.deployment_target = '11.0'
 s.name = "Simple-TabBar"
 s.summary = "A Simple custom animated tab bar"
 s.requires_arc = true
