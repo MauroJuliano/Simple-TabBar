@@ -43,8 +43,26 @@ open class BorderTabBarController: UITabBarController {
         tabBar.layer.masksToBounds = true
         tabBar.layer.cornerRadius = 40
         tabBar.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        
+        tabBar.backgroundImage = getColoredImage(color: .clear, size: CGSize(width: view.frame.width, height: 100))
+        
+        UITabBar.appearance().layer.borderWidth = 0.0
+        UITabBar.appearance().clipsToBounds = true
+        
         self.setValue(tabBar, forKey: "tabBar")
     }
+    
+
+
+func getColoredImage(color: UIColor, size: CGSize) -> UIImage {
+    let rect = CGRect(origin: CGPoint(x: 0, y: 0), size: size)
+    UIGraphicsBeginImageContextWithOptions(size, false, 0)
+    color.setFill()
+    UIRectFill(rect)
+    guard let image:UIImage = UIGraphicsGetImageFromCurrentImageContext() else { return UIImage()}
+    UIGraphicsEndImageContext()
+    return image
+}
     
     open override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
